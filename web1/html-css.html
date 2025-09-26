@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Quando colocamos a tag style dentro de um html, chamamos-a de CSS Interno :) -->
+    <style>
+
+        /* Tipo de declaração abaixo é TAG*/
+        /*Nota-se que a declaração de comentário muda.*/
+        p{
+            color: #167d49;
+            font-weight: bold;
+        }
+
+        #primeiroparagrafo {
+            color: orange;
+        }
+
+        #segundoparagrafo {
+            color: cadetblue;
+            font-weight: 50;
+        }
+
+        /*Nota-se que o lorem ipsum (p) está em branco. Pois o navegador lê o css de cima para baixo.*/
+        p {
+            color: #8c52f8;
+        }
+
+        .zebra {
+            background-color: aquamarine;
+            padding: 5px 15px;
+            width: 300px;
+        }
+
+        *{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        div{
+            display: block;
+        }
+
+        div div {
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="color: #0b167e;">Somente este H1 irá receber a formatação</h1>
+    <h1>Como não tenho style, dico na formatação padrão do navegador.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non consectetur quia officiis recusandae? Eos ipsa consectetur perspiciatis, nobis distinctio quo ratione amet soluta fugiat quibusdam ab debitis eum nulla molestiae!</p>
+    <p>	Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quia provident, hic nisi reprehenderit rem ducimus quam nulla labore necessitatibus mollitia et optio doloremque, unde quaerat architecto quibusdam, accusantium facere?</p>
+
+    <h2 style="font-family: 'Courier New', Courier, monospace; color: #f56b04; text-align: center;">Tenho várias formatações! ^w^</h2>
+
+    <br> <br>
+
+    <p id="primeiroparagrafo">Eu tenho um ID</p>
+    <p id="segundoparagrafo">Eu tenho um ID</p>
+    <br> <br>
+
+    <ol>
+        <li class="zebra">Item 1</li>
+        <li>Item 2</li>
+        <li class="zebra">Item 3</li>
+        <li>Item 4</li>
+        <li class="zebra">Item 5</li:cs>
+    </ol>
+
+    <div style="background-color: #167d49; height: 200px; width: 200px">
+        <div style="background-color: yellow; height: 100; width: 100px;">
+            <b style="padding: 0px 0px 0px 0px; background-color: aqua;">Teste de padding</b>
+            <br>
+            <i style="padding: 50px 0px 0px 0px;">Teste de Margin</i>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,303 @@
+<html lang="en">
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Guia de Tags - HTML</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+        <style>
+          body button {
+            background-color: #0d6efd;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: white;
+            }
+    
+          body button:hover {
+            background-color: #0b5ed7; 
+            transform: translateY(-2px); 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+          }
+
+          #bttpe {
+            background-color: red;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: white;
+          }
+    
+          .topo {
+          text-align: center;
+          margin-top: 40px;
+          }
+    
+        .bttopo {
+        display: flex;        
+        justify-content: center;
+        gap: 10px;              
+        margin-top: 20px; }
+    
+        </style>
+    
+      </head>
+      <body class="container my-4">
+        
+        <div class="topo">
+    
+        <h1 id="topo">Guia de Tags HTML</h1>
+        <h5>Samuel Custódio dos Santos - 1° DSM</h5>
+    
+        </div>
+        
+        <br><br>
+    
+    
+        <div class="bttopo">
+    
+        <a href="#estrutura"><button>Tags de Estrutura e Texto</button></a>
+        <a href="#semanticas"><button>Tags Semânticas do HTML 5</button></a>
+        <a href="#mmidia"><button>Tags de Multimídia</button></a>
+        <a href="#form"><button>Tags de Formulário</button></a>
+        <a href="#contato"><button>Tags de Contato</button></a>
+    
+        </div>
+    
+        <br><br><br><br><hr>
+    
+        <h1 id="estrutura">Tags de Estrutura e Texto.:</h1>
+        <h5>As tags de estrutura e texto do HTML são aquelas usadas para organizar o conteúdo escrito de uma página. Elas servem para criar títulos, parágrafos, links, listas, imagens e blocos de conteúdo.</h5>
+        <br>
+        
+        <h3>H1 ao H6.:</h3>
+        <h5>Usadas para criar títulos e subtítulos. H1 é o mais importante e H6 o menos.</h5>
+        <div id="ex1">
+          <h1>Título Principal</h1>
+          <h2>Subtítulo</h2>
+          <h3>Seção menor</h3>
+          <h6>[h1]Título Principal[/h1] [h2]Subtítulo[/h2] [h3]Seção menor[/h3]</h6>
+        </div>
+    
+        <br>
+    
+        <h3>P.:</h3>
+        <h5>Define o parágrafo de um texto.</h5>
+        <div id="ex2">
+          <p>Este é um parágrafo de exemplo.</p>
+          <h6>[p]Este é um parágrafo de exemplo.[/p]</h6>
+        </div>
+    
+        <br>
+    
+        <h3>A.:</h3>
+        <h5>Cria links para outras páginas ou recursos.</h5>
+        <div id="ex3">
+          <a href="https://fatecjahu.edu.br">Ir para o site da FATEC!</a>
+          <h6>[a href="https://fatecjahu.edu.br"]Ir para o site da FATEC![/a]</h6>
+        </div>
+    
+        <br>
+    
+        <h3>Strong.:</h3>
+        <h5>Dá ênfase forte no texto, em negrito.</h5>
+        <div id="ex4">
+          <p>Exemplo de <strong>Strong!</strong></p>
+          <h6>Exemplo de [strong]Strong![/strong]</h6>
+        </div>
+    
+        <br>
+    
+        <h3>Em.:</h3>
+        <h5>Dá ênfase leve no texto, em itálico.</h5>
+        <div id="ex5">
+          <p>Exemplo de <em>ênfase</em></p>
+          <h6>Exemplo de [em]ênfase[/em]</h6>
+        </div>
+    
+        <br>
+    
+        <h3>UL, OL e LI.:</h3>
+        <h5>Listas não ordenadas (ul), ordenadas (ol) e seus itens (li).</h5>
+        <div id="ex6">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+          <ol>
+            <li>Primeiro</li>
+            <li>Segundo</li>
+          </ol>
+          <h6>[ul][li]Item 1[/li][li]Item 2[/li][/ul]</h6>
+          <h6>[ol][li]Primeiro[/li][li]Segundo[/li][/ol]</h6>
+        </div>
+    
+        <br>
+    
+        <h3>IMG.:</h3>
+        <h5>Insere uma imagem na página.</h5>
+        <div id="ex7">
+          <img src="https://preview.redd.it/cat-v0-wmgsmh5cr9aa1.jpg?width=640&crop=smart&auto=webp&s=1bc95d9d70059419d98e938f4490dbb666298524" alt="Exemplo">
+          <h6>[img src="https://preview.redd.it/cat-v0-wmgsmh5cr9aa1.jpg?width=640&crop=smart&auto=webp&s=1bc95d9d70059419d98e938f4490dbb666298524" alt="Exemplo"]</h6>
+        </div>
+    
+        <br>
+    
+        <h3>DIV.:</h3>
+        <h5>Um contêiner genérico em bloco.</h5>
+        <div id="ex8">
+          <div style="background: lightblue; padding: 5px;">Conteúdo dentro da div</div>
+          <h6>[div]Conteúdo[/div]</h6>
+        </div>
+    
+        <br>
+    
+        <h3>SPAN.:</h3>
+        <h5>Um contêiner em linha para destacar partes de um texto.</h5>
+        <div id="ex9">
+          <p>Texto com <span style="color:red;"><strong>strong e span L</strong></span></p>
+          <p>Texto com <span style="color:orange;"><strong>strong e span G</strong></span></p>
+          <p>Texto com <span style="color:yellow;"><strong>strong e span B</strong></span></p>
+          <p>Texto com <span style="color:green;"><strong>strong e span T</strong></span></p>
+          <p>Texto com <span style="color:purple;"><strong>strong e span Q</strong></span></p>
+          <p>Texto com <span style="color:pink;"><strong>strong e span +</strong></span></p>
+          <h6>[span style="color:red/blue/green;"]Texto[/span]</h6>
+        </div>
+    
+        <hr>
+    
+        <h1 id="semanticas">Tags Semânticas do HTML5.:</h1>
+        <h5>Servem para dar significado ao conteúdo, ajudando na organização e acessibilidade.</h5>
+        <br>
+    
+        <h3>Header.:</h3>
+        <h5>Define o cabeçalho da página ou seção.</h5>
+        <div id="ex10">
+          <header><h2>Meu Site</h2></header>
+          <h6>[header][h2]Meu Site[/h2][/header]</h6>
+        </div>
+    
+        <br>
+    
+        <h3>Footer.:</h3>
+        <h5>Define o rodapé da página ou seção.</h5>
+        <div id="ex11">
+          <footer>Rodapé do site</footer>
+          <h6>[footer]Rodapé do site[/footer]</h6>
+        </div>
+    
+        <br>
+    
+        <h3>Nav.:</h3>
+        <h5>Área de navegação da página.</h5>
+        <div id="ex12">
+          <nav><a href="#">Início</a> | <a href="#">Sobre</a></nav>
+          <h6>[nav][a href="#"]Início[/a][/nav]</h6>
+        </div>
+    
+        <br>
+    
+        <h3>Main.:</h3>
+        <h5>Conteúdo principal único da página.</h5>
+        <div id="ex13">
+          <main>Texto principal</main>
+          <h6>[main]Texto principal[/main]</h6>
+        </div>
+    
+        <br>
+    
+        <h3>Section.:</h3>
+        <h5>Seção de conteúdo relacionado.</h5>
+        <div id="ex14">
+          <section>Notícias recentes...</section>
+          <h6>[section]Notícias recentes...[/section]</h6>
+        </div>
+    
+        <br>
+    
+        <h3>Article.:</h3>
+        <h5>Conteúdo independente, como post ou artigo.</h5>
+        <div id="ex15">
+          <article>Artigo independente</article>
+          <h6>[article]Artigo independente[/article]</h6>
+        </div>
+    
+        <br>
+    
+        <h3>Aside.:</h3>
+        <h5>Conteúdo lateral ou complementar.</h5>
+        <div id="ex16">
+          <aside>Links relacionados</aside>
+          <h6>[aside]Links relacionados[/aside]</h6>
+        </div>
+    
+        <hr>
+    
+        <h1 id="mmidia">Tags de Multimídia.:</h1>
+        <br>
+    
+        <h3>Video.:</h3>
+        <h5>Insere vídeos na página.</h5>
+        <div id="ex17">
+          <video controls width="200">
+            <source src="video.mp4" type="video/mp4">
+          </video>
+          <h6>[video controls widht="200"][source src="video.mp4" type="video/mp4"][/video]</h6>
+        </div>
+    
+        <br>
+    
+        <h3>Audio.:</h3>
+        <h5>Insere áudios na página.</h5>
+        <div id="ex18">
+          <audio controls>
+            <source src="musica.mp3" type="audio/mpeg">
+          </audio>
+          <h6>[audio controls][source src="musica.mp3" type="audio/mpeg"][/audio]</h6>
+        </div>
+    
+        <hr>
+    
+        <h1 id="form">Tags de Formulário.:</h1>
+        <br>
+    
+        <h3>Form, Input, Label e Button.:</h3>
+        <h5>Usados para criar formulários e coletar dados do usuário.</h5>
+        <div id="ex19">
+          <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+            <button type="submit">Enviar</button>
+          </form>
+          <h6>[form][label for="nome"]Nome:[/label][input type="text" id="nome"][button]Enviar[/button][/form]</h6>
+        </div>
+
+        <hr>
+    
+
+        <h1 id="contato">Tags de Contato (?).:</h1>
+        <br>
+        <a href="tel:14982079229" target="_blank"><img src="https://static.vecteezy.com/system/resources/thumbnails/014/441/078/small_2x/phone-call-icon-design-in-blue-circle-png.png" alt="Icone celular" width="35px" height="35px" srcset=""></a>
+        <a href="https://api.whatsapp.com/send?phone=5514982079229&text=Oi,%20%20tudo%20bem?" target="_blank"><img src="https://www.gov.br/mds/pt-br/canais_atendimento/disque-social-121/imagens/icone-whatsapp.png" alt="Icone do WPP" width="50px" height="50px"></a>
+        <a href="mailto:samuelcustodiosantos2020@gmail.com" target="_blank"><img src="https://freepngimg.com/save/61684-logo-email-address-png-image-high-quality/591x591" alt="Icone email" width="35px" height="35px" srcset=""></a>
+
+        <br><br></br>
+    
+        <a href="#topo"><button>Voltar ao início</button></a>
+        <a href="html-css.html"><button id="bttpe">Próxima Etapa!</button></a>
+        <br>
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      </body>
+    </html>
